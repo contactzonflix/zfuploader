@@ -1,0 +1,8 @@
+aiofiles
+Pillow
+humanize
+hachoir
+pyrofork==2.3.45
+TgCrypto
+dnspython
+aiohttp
