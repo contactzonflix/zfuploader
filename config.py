@@ -22,8 +22,8 @@ PORT = os.environ.get("PORT", "8080")
 
 MAX_BTN = int(os.environ.get('MAX_BTN', '5'))
 PLAYERX_API_KEY = os.environ.get("PLAYERX_API_KEY", "OZXIlJDnA7XNFtLT")
-STREAMWISH_API_KEY = os.environ.get("STREAMWISH_API_KEY", "12723nbydgiy65rubeisl")
-VIDHIDE_API_KEY = os.environ.get("VIDHIDE_API_KEY", "33607i8rsm44jwzx1rh3b")
+STREAMWISH_API_KEY = os.environ.get("STREAMWISH_API_KEY", "12723h4bfyo2ww9b1czdx")
+VIDHIDE_API_KEY = os.environ.get("VIDHIDE_API_KEY", "33607vg0k60vzf4vazdox")
 STREAMWISH_WATCH_URL = os.environ.get("STREAMWISH_WATCH_URL","hlswish.com") #input only FQDN without https:// ✅
 STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS", "R794XJ7xzeuddRy")
 STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME", "85b1adf18183b1dded50")

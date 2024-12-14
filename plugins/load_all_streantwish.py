@@ -93,7 +93,7 @@ async def load_all_streamws_file(client, message):
         return
         
     async with aiohttp.ClientSession() as session:
-        list_api = f"https://api.streamwish.com/api/file/list?key={STREAMWISH_API_KEY}"
+        list_api = f"https://streamhgapi.com/api/file/list?key={STREAMWISH_API_KEY}"
         try:
             async with session.get(list_api) as response:
                 if response.status == 200:

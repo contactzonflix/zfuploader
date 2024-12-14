@@ -38,8 +38,8 @@ async def skiprename(bot, update: CallbackQuery):
                 InlineKeyboardButton("👇 Below Are Seperate Servers 👇",callback_data = "selectserver")
                 ],
                 [
-                InlineKeyboardButton("🚀 StreamTape",callback_data = "upload_streamtape"),
-                InlineKeyboardButton("☢ StreamWish",callback_data = "upload_streamwish")
+                InlineKeyboardButton("🚀 StreamTape", callback_data = "upload_streamtape"),
+                InlineKeyboardButton("☢ StreamWish", callback_data = "upload_streamwish")
                 ],
                 [
                 InlineKeyboardButton("▶ PlayerX",callback_data = "upload_playerx"),
@@ -213,7 +213,7 @@ async def upload_to_streamwish(bot, update, path, server_name, ms, new_filename)
     async with aiohttp.ClientSession() as session:
         try:
             # Get Streamwish upload URL
-            Main_API = f"https://api.streamwish.com/api/upload/server?key={STREAMWISH_API_KEY}"
+            Main_API = f"https://streamhgapi.com/api/upload/server?key={STREAMWISH_API_KEY}"
             async with session.get(Main_API) as hit_api:
                 json_data = await hit_api.json()
                 temp_api = json_data.get("result")
@@ -280,7 +280,7 @@ async def upload_to_vidhide(bot, update, path, server_name, ms, new_filename):
     async with aiohttp.ClientSession() as session:
         try:
             # Get VIDHIDE upload URL
-            Main_API = f"https://vidhideapi.com/api/upload/server?key={VIDHIDE_API_KEY}"
+            Main_API = f"https://earnvidsapi.com/api/upload/server?key={VIDHIDE_API_KEY}"
             async with session.get(Main_API) as hit_api:
                 json_data = await hit_api.json()
                 temp_api = json_data.get("result")
@@ -445,7 +445,7 @@ async def upload_to_allserver(bot, update, path, server_name, ms, new_filename):
         )
 
         # Get Streamwish upload URL
-        Main_API = f"https://api.streamwish.com/api/upload/server?key={STREAMWISH_API_KEY}"
+        Main_API = f"https://streamhgapi.com/api/upload/server?key={STREAMWISH_API_KEY}"
         async with session.get(Main_API) as hit_api:
             json_data = await hit_api.json()
             temp_api = json_data.get("result")
@@ -481,7 +481,7 @@ async def upload_to_allserver(bot, update, path, server_name, ms, new_filename):
         )
 
         # Get VIDHIDE upload URL
-        Main_API = f"https://vidhideapi.com/api/upload/server?key={VIDHIDE_API_KEY}"
+        Main_API = f"https://earnvidsapi.com/api/upload/server?key={VIDHIDE_API_KEY}"
         async with session.get(Main_API) as hit_api:
             json_data = await hit_api.json()
             temp_api = json_data.get("result")
